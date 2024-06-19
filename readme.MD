@@ -25,8 +25,8 @@
     it will ask token/browser auth (2F auth) 
         create a token from settings--developer settings-- personal access tokens --tokens (classic) --create token classic --select applicables and create
         **token should not be exposed anyone**
-**token is:**
-# stored in repos folder
+
+# stored in C/token folder
 
 **naming convention: use small case with hyphens(-). no spaces**
 

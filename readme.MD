@@ -26,7 +26,7 @@
         create a token from settings--developer settings-- personal access tokens --tokens (classic) --create token classic --select applicables and create
         **token should not be exposed anyone**
 **token is:**
-        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
+# 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#
 
 **naming convention: use small case with hyphens(-). no spaces**
 

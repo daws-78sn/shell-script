@@ -11,5 +11,5 @@ echo "Exit status of last command: $?"
 echo "Home directory of current user: $HOME"
 echo "Which is user is running this script: $USER"
 echo "Hostname: $HOSTNAME"
-sleep 60
+sleep 10 &
 echo "Process ID of last background command: $!"

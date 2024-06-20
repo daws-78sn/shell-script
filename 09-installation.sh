@@ -10,3 +10,6 @@ else
 fi
 
 dnf install mysql -y
+
+echo "is script proceeding?"
+#read -p "Press enter to continue..."

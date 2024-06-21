@@ -26,7 +26,7 @@ dnf install git -y
 VALIDATE $? "installing mysql" # $? gives the exit status of previous command
 
 
-dnf install mysqll -y
+dnf install mysql -y
 
 VALIDATE $? "installing mygit" # $? gives the exit status of previous command
 

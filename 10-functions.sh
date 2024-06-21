@@ -24,12 +24,12 @@ else
     echo "You are super user."
 fi
 
-dnf install git -y
+dnf install git -y &>>$LOGFILE
 
 VALIDATE $? "installing mygit" # $? gives the exit status of previous command
 
 
-dnf install mysql -y
+dnf install mysql -y &>>LOGFILE
 
 VALIDATE $? "installing sql" # $? gives the exit status of previous command
 

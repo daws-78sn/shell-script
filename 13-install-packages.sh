@@ -36,6 +36,6 @@ do
         echo -e "Package $i is already installed...$Y SKIPPING $N"
     else
         dnf install $i -y &>>$LOGFILE
-        VALIDATE $? "Installation of $i 
+        VALIDATE $? "Installation of $i" 
     fi
 done

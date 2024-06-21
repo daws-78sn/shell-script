@@ -21,12 +21,12 @@ else
     echo "You are super user."
 fi
 
-dnf install gitt -y
+dnf install git -y
 
 VALIDATE $? "installing mysql" # $? gives the exit status of previous command
 
 
-dnf install mysql -y
+dnf install mysqll -y
 
 VALIDATE $? "installing mygit" # $? gives the exit status of previous command
 

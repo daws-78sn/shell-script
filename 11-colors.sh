@@ -32,10 +32,13 @@ fi
 
 dnf install git -y &>>$LOGFILE
 
-VALIDATE $? "installing mygit" # $? gives the exit status of previous command
+VALIDATE $? "installing mygit"
 
 
-dnf install mysql -y &>>LOGFILE
+dnf install mysql -y &>>$LOGFILE
 
-VALIDATE $? "installing sql" # $? gives the exit status of previous command
+VALIDATE $? "installing sql" 
 
+dnf install dockerr -y &>>$LOGFILE
+
+VALIDATE $? "Installing Docker"

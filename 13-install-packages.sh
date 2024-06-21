@@ -8,7 +8,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0"
-echo -e "$Y Starting $SCRIPT_NAME $N at $TIMESTAMP"
+#echo -e "$Y Starting $SCRIPT_NAME $N at $TIMESTAMP"
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then

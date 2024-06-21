@@ -31,14 +31,10 @@ else
 fi
 
 dnf install git -y &>>$LOGFILE
-
 VALIDATE $? "installing mygit"
 
-
 dnf install mysql -y &>>$LOGFILE
-
 VALIDATE $? "installing sql" 
 
-dnf install dockerr -y &>>$LOGFILE
-
-VALIDATE $? "Installing Docker"
+#dnf install dockerr -y &>>$LOGFILE
+#VALIDATE $? "Installing Docker"

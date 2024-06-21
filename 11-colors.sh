@@ -40,6 +40,6 @@ dnf install mysql -y &>>$LOGFILE
 
 VALIDATE $? "installing sql" # $? gives the exit status of previous command
 
-dnf install dockerr -y &>>$LOGFILE
+dnf install docker -y &>>$LOGFILE
 
 VALIDATE $? "Installing docker" # $? gives the exit status of previous command

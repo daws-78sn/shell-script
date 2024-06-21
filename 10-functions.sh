@@ -1,6 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
+TIMESTAMP=$(date +%F-%H-%M-%S)
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -23,10 +26,10 @@ fi
 
 dnf install git -y
 
-VALIDATE $? "installing mysql" # $? gives the exit status of previous command
+VALIDATE $? "installing mygit" # $? gives the exit status of previous command
 
 
 dnf install mysql -y
 
-VALIDATE $? "installing mygit" # $? gives the exit status of previous command
+VALIDATE $? "installing sql" # $? gives the exit status of previous command
 

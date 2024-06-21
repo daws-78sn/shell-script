@@ -7,17 +7,18 @@ LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-N="\e[0m]
+N="\e[0m"
+#BOLD="\e[1m"
 
-echo "Script started ececuting at: $TIMESTAMP"
+echo "Script started executing at: $TIMESTAMP"
 
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo -e "$2...$R FAILURE $N"
+        echo "$2...$R FAILURE $N"
         exit 1
     else
-        echo -e "$2...$G SUCCESS $N"
+        echo "$2...$G SUCCESS $N"
     
     fi
 }
@@ -31,10 +32,14 @@ else
 fi
 
 dnf install git -y &>>$LOGFILE
-VALIDATE $? "installing mygit"
+
+VALIDATE $? "installing mygit" # $? gives the exit status of previous command
+
 
 dnf install mysql -y &>>$LOGFILE
-VALIDATE $? "installing sql" 
 
-#dnf install dockerr -y &>>$LOGFILE
-#VALIDATE $? "Installing Docker"
+VALIDATE $? "installing sql" # $? gives the exit status of previous command
+
+dnf install dockerr -y &>>$LOGFILE
+
+VALIDATE $? "Installing docker" # $? gives the exit status of previous command

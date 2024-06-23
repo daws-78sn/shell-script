@@ -15,5 +15,3 @@ fi
 dnf install gitt -y
 dnf install mysql -y
 echo "is script proceeding"
-
-
